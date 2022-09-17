@@ -1,4 +1,5 @@
 """
+#1
 # o programa está cobrando mais horas do que deveria. Acrescenta 40 min a mais em cada hora!
 #horario_chegada = hc e horário partida = hp
 while True:
@@ -30,13 +31,25 @@ while True:
         print(f'Pagar {pagar:.1f} reais pela diária e horas extras!')
 
     print(f'{qtd:.1f} horas')
+
+#2
+while True:
+    print('%' * 50, 'CÁLCULO DE VALOR A PAGAR EM ESTACIONAMENTO:', "%" * 50)
+    hc = int(input('Informe a hora de chegada:'))
+    while hc < 0 or hc >= 25:
+        print('Hora inválida!')
+        hc = int(input('Informe a hora de chegada:'))
+    mc = int(input('Informe os minutos de chegada:'))
+    while mc < 0 or mc >= 60:
+        print('Minutos inválidos!')
+        mc = int(input('Informe os minutos de chegada:'))
+    hs = int(input('Informe a hora de saída:'))
+    while hs < 0 or hs >= 25:
+        print('Hora inválida!')
+        hs = int(input('Informe a hora de saída:'))
+    ms = int(input('Informe os minutos de saída:'))
+    while ms < 0 or ms >= 60:
+        print('Minutos inválidos!')
+        ms = int(input('Informe os minutos de saída:'))
+    qtd = (hc + mc) / 60
 """
-
-
-
-
-
-
-
-
-
