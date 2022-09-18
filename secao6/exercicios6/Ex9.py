@@ -15,7 +15,6 @@ for i in range(0, num + 1):
         print(impares, end=' ')
 
 #3
-"""
 impares = 0
 num = float(input('Informe um número inteiro:'))
 while num != int(num):
@@ -25,6 +24,17 @@ while num != int(num):
         if i % 2 != 0:
             impares = i
             print(impares,end=' ')
+"""
+while True:
+    print('%' * 50, 'ACHA VALORES ÍMPARES DENTRO DE UMA SEQUÊNCIA LIMITADA DE NÚMEROS:', '%' * 50)
+    num = float(input('Informe um número natural inteiro:'))
+    while num != int(num):
+        print('Não é número natural inteiro:')
+        num = float(input('Informe um número natural inteiro:'))
+    for i in range(0, int(num)):
+        if i % 2 != 0:
+            print(f'{i}', end=' ')
+    print('\n')
 
 
 

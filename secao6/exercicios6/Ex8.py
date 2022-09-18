@@ -30,8 +30,6 @@ for i in range(1, 11):
     lista.append(num)
 print(f'Entre os números digitados o maior é {max(lista)} e o menor é {min(lista)}!!')
 
-
-"""
 #4
 lista = [ ]
 
@@ -43,23 +41,15 @@ for i in range(1,11):
     lista.append(num)
 print(f'O maior número da lista é {max(lista)} e o menor número é {min(lista)}!')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
+maior = -9999999999
+menor = 9999999999
+while True:
+    print('%' * 50, 'MOSTRAR O MAIOR E O MENOR NÚMERO DE UMA SEQUÊNCIA NUMÉRICA:', '%' * 50)
+    for i in range(1, 11):
+        num = float(input(f'Insira o {i}º número:'))
+        if num > maior:
+            maior = num
+        elif num < menor:
+            menor = num
+    print(f'O maior número da sequência é {maior} e o menor é {menor}!')
