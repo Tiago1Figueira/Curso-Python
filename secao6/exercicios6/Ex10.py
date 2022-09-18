@@ -21,23 +21,18 @@ lista = [ ]
 for i in range(2, 52, 2):
     lista.append(i)
     print(sum(lista))
-"""
+
 #5
 soma = 0
 for numero in range(0,52):
     if numero % 2 == 0:
         soma += numero
 print(soma)
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
+soma = 0
+print('%' * 50, 'CALCULA VALORES PARES MOSTRANDO-OS COM A  SOMA NO PRINT:', '%' * 50)
+for i in range(0, 101):
+    if i % 2 == 0:
+        soma += i
+        print(i)
+        print(soma)

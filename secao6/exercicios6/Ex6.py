@@ -36,18 +36,13 @@ for i in range(1,11):
 print(f'A média dos números informados é {sum(lista) / len(lista)}!')
 
 """
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+soma = 0
+cont = 0
+while True:
+    print('%' * 50, 'CÁLCULO DE MÉDIA DE 10 NÚMEROS INTEIROS:', '%' * 50)
+    for i in range(1, 11):
+        num = int(input(f'Insira o {i}º número inteiro:'))
+        soma += num
+        cont += 1
+        media = soma / cont
+    print(f'O valor da média é {media}!')

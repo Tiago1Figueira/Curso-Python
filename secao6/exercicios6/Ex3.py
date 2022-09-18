@@ -16,13 +16,17 @@ while i >0:
     print(i, end=' ')
 print('FIM!')
 
-"""
 #4
 n = 11
 while n > 0:
     n = n - 1
     print(n,end=' ')
 print('FIM!')
-
+"""
+n = 11
+while n > 0:
+    n = n - 1
+    print(n, end=' ')
+print('FIM!')
 
 

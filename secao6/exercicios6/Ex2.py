@@ -29,19 +29,11 @@ while n < 100:
     print(n)
 
 """
+for i in range(1, 101):
+    print(i, end=' ')
+print('%' * 100)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+n = 0
+while n < 100:
+    n = n + 1
+    print(n, end=' ')
