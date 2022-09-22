@@ -56,7 +56,6 @@ while True:
     else:
         break
 print(f'{cont_total} números foram digitados, dos quais {cont_pares} são pares!')
-"""
 
 #5
 cont = 0
@@ -75,21 +74,27 @@ while True:
     else:
         break
 print(f'{cont} números foram digitados e {len(pares)} é/são pares!')
+"""
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+pares = 0
+cont_pares = 0
+primeiro_cont = 0
+segundo_cont = 0
+cont_total = 0
+# print('%' * 50, '  :', '%' * 50)
+while True:
+    print('%' * 50, 'DETERMINA SE NÚMEROS SÃO PARES E O SEU NÚMERO TOTAL. TERMINA COM O NÚMERO 1000: ', '%' * 50)
+    print('DIGITE QUANTOS NÚMEROS QUISER! 1000 TERMINA O PROGRAMA!')
+    num = float(input('Inserir números inteiros:'))
+    primeiro_cont += 1
+    while num != int(num):
+        print('Número Inválido!')
+        num = float(input('Inserir números inteiros:'))
+    while int(num) != 1000:
+        num = float(input('Inserir números inteiros:'))
+        segundo_cont += 1
+        if num % 2 == 0:
+            pares = num
+            cont_pares += 1
+        cont_total = primeiro_cont + segundo_cont
+    print(f'{cont_total} números foram digitados dos quais {cont_pares} são pares. ')

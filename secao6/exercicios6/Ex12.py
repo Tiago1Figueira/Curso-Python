@@ -24,7 +24,6 @@ while True:
     for i in range(num, - 1 , -1):
         print(i,end= ' ')
 
-"""
 #4
 while True:
     num = float(input('\nInforme um número inteiro:'))
@@ -33,28 +32,13 @@ while True:
         num = float(input('Informe um número inteiro:'))
     for i in range(int(num), -1, -1):
         print(i,end=' ')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
+while True:
+    print('%' * 50, 'IMPRIMA TODOS OS VALORES DE 0 ATÉ O NÚMERO INSERIDO PELO USUÁRIO NA FORMA INVERTIDA:', '%' * 50)
+    num = float(input('Insira um número positivo e inteiro:'))
+    while num < 0 or num != int(num):
+        print('Número inválido!')
+        num = float(input('Insira um número positivo e inteiro:'))
+    for i in range(int(num), -1, -1):
+        print(i, end=' ')
+    print('\n')

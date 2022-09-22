@@ -57,8 +57,6 @@ while True:
         break
 print(f'A média das notas digitadas será {media}')
 
-
-"""
 #5
 notas = []
 media = ' '
@@ -72,6 +70,15 @@ while True:
     else:
         break
 print(f'A média das notas é {media:.2f}!')
+
+"""
+while True:
+    print('%' * 50, '  :', '%' * 50)
+
+
+
+
+
 
 
 

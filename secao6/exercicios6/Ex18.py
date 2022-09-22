@@ -72,7 +72,7 @@ while True:
         maior = max(lista)
         print(f'O maior número é {maior} e apareceu {(len(maior))}!')
 
-"""
+#6
 maior = 0
 cont = 0
 while True:
@@ -87,11 +87,21 @@ while True:
             maior = num
             cont += 1
     print(f'O maior número é {maior} e ele apareceu {cont} vez(es)!')
-
-
-
-
-
-
-
-
+"""
+maior = - 9999
+cont = 0
+while True:
+    print('%' * 50, 'IMPRIMIR O MAIOR NÚMERO E QUANTAS VEZES ELE FOI CONTADO. USUÁRIO INFORMA QUANTIDADE DE NÚMEROS ',
+          '%' * 50)
+    qtd = float(input('Insira a quantidade de números que serão lidos:'))
+    while qtd < 0 or qtd != int(qtd):
+        print('Número inválido!')
+        qtd = float(input('Insira a quantidade de números que serão lidos:'))
+    for i in range(1, int(qtd + 1)):
+        num = float(input(f'Insira o {i}º número:'))
+        if num > maior:
+            maior = num
+            cont = 1
+        elif num == maior:
+            cont += 1
+    print(f'Maior número {maior} e Qtd vezes que apareceu {cont}!')

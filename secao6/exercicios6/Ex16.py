@@ -15,7 +15,6 @@ while num < 0 or num % 2 == 0:
 for i in range(num, 0, -1):
     if i % 2 != 0:
         print(i, end=' ')
-"""
 #3
 while True:
     num = float(input('\nInforme um número inteiro positivo ímpar:'))
@@ -24,31 +23,17 @@ while True:
         num = float(input('\nInforme um número inteiro positivo ímpar:'))
     for i in range(int(num), -1, -1):
         print(i, end=' ')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
+while True:
+    print('%' * 50, 'IMPRIMIR TODOS OS NÚMERO ÍMPARES DE 1 ATÉ O NÚMERO INSERIDO PELO USUÁRIO NA ORDERM DECRESCENTE:',
+          '%' * 50)
+    num = float(input('Insira um número positivo, inteiro e ímpar:'))
+    while num < 0 or num % 2 == 0 or num != int(num):
+        print('Número Inválido!')
+        num = float(input('Insira um número positivo, inteiro e ímpar:'))
+    for i in range(int(num + 1), -1, -1):
+        if i % 2 != 0:
+            print(i, end=' ')
+    print('\n')
 
 
