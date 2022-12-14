@@ -23,7 +23,6 @@ for i in range(1, n +1):
     h = h + 1/divisao
 print(f'O número harmônico de {n} é {h:.2f}!')
 
-"""
 #3
 h = ' '
 soma = 0
@@ -37,6 +36,23 @@ while True:
         soma += 1 / i
         h = 1 + soma
     print(f'O número harmônico do número {num} é {h:.2f}!')
+"""
+soma = 0
+while True:
+    print('%' * 50, 'CALCULA O VALOR DA FUNÇÃO HARMÔNICA', '%' * 50)
+    n = float(input('Insira um número positivo e inteiro:'))
+    while n <= 0 or n != int(n):
+        print('Número inválido!')
+        n = float(input('Insira um número positivo e inteiro:'))
+    for i in range(1, int(n) + 1):
+        soma += 1 / i
+        h = 1 + soma
+    print(f'O valor da função harmônica para o número {n} é {h:.2f}.')
+
+
+
+
+
 
 
 
