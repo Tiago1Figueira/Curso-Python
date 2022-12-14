@@ -22,8 +22,14 @@ for i in range(3, 18, 3):
 #5
 for i in range(3,18,3):
     print(i,end=' ')
-"""
+
 print('%' * 50, 'MOSTRA OS 5 PRIMEIROS MÚLTIPLOS 3 NUM RANGE:', '%' * 50)
 for i in range(1, 16):
     if i % 3 == 0:
         print(i)
+"""
+while True:
+    print('%' * 50, 'MOSTRA OS 5 PRIMEIROS MÚLTIPLOS DE 3', '%' * 50)
+    for i in range(1, 16):
+        if i % 3 == 0:
+            print(i)
