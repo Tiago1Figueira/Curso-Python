@@ -72,22 +72,21 @@ while True:
 print(f'A média das notas é {media:.2f}!')
 
 """
+soma = 0
+cont_1 = 0
+cont_2 = 0
 while True:
-    print('%' * 50, '  :', '%' * 50)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    print('%' * 50, 'CALCULA A MÉDIA ARITMÉTICA DAS NOTAS DOS ALUNOS:', '%' * 50)
+    notas = float(input('Insira notas entre 10 e 20:'))
+    cont_1 = cont_1 + 1
+    while notas >= 10 and notas <= 20:
+        notas = float(input('Insira notas entre 10 e 20:'))
+        cont_2 = cont_2 + 1
+        soma = soma + notas
+        cont_total = cont_1 + cont_2
+        media = soma / cont_total
+    else:
+        print('Nota inválida!')
+        print('Você saiu!')
+        break
+print(f'A média aritmética das {cont_total} notas é {media:.2f}.')

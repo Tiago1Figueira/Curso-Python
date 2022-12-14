@@ -32,7 +32,6 @@ for i in range(num, num + 20):
             divisivel_17 = i
 print(f'O divisores de 11, 13 e 17 após o número {num} são {divisivel_11}, {divisivel_13}, {divisivel_17}!')
 
-"""
 #3
 divisor_11 = ' '
 divisor_13 = ' '
@@ -52,6 +51,26 @@ while True:
                 divisor_17 = i
     print(f'Os primeiros divisores por 11, 13 e 17 após o número {num} são {divisor_11}, {divisor_13} e {divisor_17}!')
 
+"""
+div_11 = 0
+div_13 = 0
+div_17 = 0
+while True:
+    print('%' * 50, 'CALCULA OS 3 PRIMEIROS VALORES DIVISORES DE 11,13 E 17 '
+                    'DEPOIS DO NÚMERO RECEBIDO:', '%' * 50)
+    num = float(input('Insira um número inteiro:'))
+    while num != int(num):
+        print('Número inválido!')
+        num = float(input('Insira um número inteiro:'))
+    for i in range(0, int(num) + 18):
+        if i % 11 == 0:
+            div_11 = i
+        elif i % 13 == 0:
+            div_13 = i
+        elif i % 17 == 0:
+            div_17 = i
+    print(f'Os primeiros divisores de 11, 13 e 17 após {num} são '
+          f'{div_11}, {div_13} e {div_17} respectivamente.')
 
 
 
