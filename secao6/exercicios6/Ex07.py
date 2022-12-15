@@ -37,7 +37,7 @@ for i in range(1,11):
     cont += 1
     media = soma / cont
 print(f'O valor da média dos números dados é {media}!')
-"""
+
 soma = 0
 while True:
     print("%" * 50, 'CÁLCULO DA MÉDIA DE 10 NÚMEROS INTEIROS POSITIVOS IGNORANDO OS NEGATIVOS:', '%' * 50)
@@ -49,4 +49,19 @@ while True:
         soma += num
         media = soma / 10
     print(f'A a média dos 10 número inteiros e positivos será {media}!')
+"""
+soma = 0
+cont = 0
+media = ''
+while True:
+    print('%' * 50, 'Calcula a média de 10 números inteiros e positivos', '%' * 50)
+    for i in range(1, 11):
+        num = float(input(f'Informe o {i}º número inteiro:'))
+        while num != int(num) or num < 0:
+            print('Favor informar um número inteiro e positivo!')
+            num = float(input(f'Informe o {i}º número inteiro:'))
+        soma += num
+        cont += 1
+        media = soma / cont
+    print(f'O valor da média é {media}!')
 

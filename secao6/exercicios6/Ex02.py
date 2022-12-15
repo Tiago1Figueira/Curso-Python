@@ -28,7 +28,7 @@ while n < 100:
     n = n + 1
     print(n)
 
-"""
+
 for i in range(1, 101):
     print(i, end=' ')
 print('%' * 100)
@@ -37,3 +37,13 @@ n = 0
 while n < 100:
     n = n + 1
     print(n, end=' ')
+"""
+print('%' * 50, 'MOSTRA OS VALORES DE 1 A 100 USANDO O FOR E O WHILE', '%' * 50)
+for i in range(1, 101):
+    print(i)
+
+num = 0
+while num < 100:
+    num = num + 1
+    print(num)
+

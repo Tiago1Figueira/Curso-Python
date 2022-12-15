@@ -35,7 +35,7 @@ for i in range(1,11):
     lista.append(i)
 print(f'A média dos números informados é {sum(lista) / len(lista)}!')
 
-"""
+
 soma = 0
 cont = 0
 while True:
@@ -46,3 +46,18 @@ while True:
         cont += 1
         media = soma / cont
     print(f'O valor da média é {media}!')
+"""
+soma = 0
+cont = 0
+media = " "
+while True:
+    print('%' * 50, 'Calcula o valor da média de 10 números inteiros', '%' * 50)
+    for i in range(1, 11):
+        num = float(input(f'Informe o {i}º número inteiro:'))
+        while num != int(num):
+            print('Favor informar número inteiro!')
+            num = float(input(f'Informe o {i}º número inteiro:'))
+        soma = soma + num
+        cont = cont + 1
+        media = soma / cont
+    print(f'O valor da média dos números é {media}.')
