@@ -25,7 +25,6 @@ while True:
     for i in range(0, int(num) + 1):
         print(i,end=' ')
 
-"""
 while True:
     print('%' * 50, 'IMPRIMA TODOS OS VALORES DE 0 ATÉ O NÚMERO INSERIDO PELO USUÁRIO:', '%' * 50)
     num = float(input('Insira um número inteiro e positivo:'))
@@ -35,5 +34,13 @@ while True:
     for i in range(0, int(num)):
         print(i, end=' ')
     print('\n')
-
-
+"""
+while True:
+    print('%' * 50, 'IMPRIMA TODOS OS VALORES DE 0 ATÉ O NÚMERO INSERIDO PELO USUÁRIO:', '%' * 50)
+    num = float(input('Insira um número inteiro e positivo:'))
+    while num != int(num) or num <= 0:
+        print('Favor informar número inteiro e positivo!')
+        num = float(input('Insira um número inteiro e positivo:'))
+    for i in range(0, int(num) + 1):
+        print(i, end=' ')
+    print('/n')

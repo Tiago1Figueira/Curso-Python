@@ -41,7 +41,7 @@ for i in range(1,11):
     lista.append(num)
 print(f'O maior número da lista é {max(lista)} e o menor número é {min(lista)}!')
 
-"""
+
 maior = -9999999999
 menor = 9999999999
 while True:
@@ -53,3 +53,16 @@ while True:
         elif num < menor:
             menor = num
     print(f'O maior número da sequência é {maior} e o menor é {menor}!')
+"""
+menor = 9999
+maior = - 9999
+while True:
+    print('%' * 50, 'Encontra o maior e o menor valor de uma sequência de 10 números', '%' * 50)
+    for i in range(1, 11):
+        num = float(input(f'Insira o {i}º número:'))
+        if num > maior:
+            maior = num
+        if num < menor:
+             menor = num
+    print(f'Menor número: {menor} Maior número: {maior}')
+

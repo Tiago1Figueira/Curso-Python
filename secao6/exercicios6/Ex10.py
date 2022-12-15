@@ -28,7 +28,7 @@ for numero in range(0,52):
     if numero % 2 == 0:
         soma += numero
 print(soma)
-"""
+
 soma = 0
 print('%' * 50, 'CALCULA VALORES PARES MOSTRANDO-OS COM A  SOMA NO PRINT:', '%' * 50)
 for i in range(0, 101):
@@ -36,3 +36,11 @@ for i in range(0, 101):
         soma += i
         print(i)
         print(soma)
+"""
+soma = 0
+print('%' * 50, 'CALCULA A SOMA DOS PRIMEIROS 50 VALORES PARES:', '%' * 50)
+for i in range(1, 101):
+    if i % 2 == 0:
+        soma += i
+print(f'Soma {soma}')
+

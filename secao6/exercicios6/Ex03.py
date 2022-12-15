@@ -22,11 +22,17 @@ while n > 0:
     n = n - 1
     print(n,end=' ')
 print('FIM!')
-"""
+
 n = 11
 while n > 0:
     n = n - 1
     print(n, end=' ')
 print('FIM!')
+"""
 
+num = 11
+while num >= 1:
+    num = num - 1
+    print(num)
+print("FIM!")
 
