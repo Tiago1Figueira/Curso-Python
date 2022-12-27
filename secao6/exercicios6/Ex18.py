@@ -87,12 +87,12 @@ while True:
             maior = num
             cont += 1
     print(f'O maior número é {maior} e ele apareceu {cont} vez(es)!')
-"""
+
 maior = - 9999
 cont = 0
 while True:
-    print('%' * 50, 'IMPRIMIR O MAIOR NÚMERO E QUANTAS VEZES ELE FOI CONTADO. USUÁRIO INFORMA QUANTIDADE DE NÚMEROS ',
-          '%' * 50)
+    print('%' * 50, 'IMPRIMIR O MAIOR NÚMERO E QUANTAS VEZES ELE FOI CONTADO.
+    USUÁRIO INFORMA QUANTIDADE DE NÚMEROS ','%' * 50)
     qtd = float(input('Insira a quantidade de números que serão lidos:'))
     while qtd < 0 or qtd != int(qtd):
         print('Número inválido!')
@@ -105,3 +105,21 @@ while True:
         elif num == maior:
             cont += 1
     print(f'Maior número {maior} e Qtd vezes que apareceu {cont}!')
+"""
+maior = -9999
+cont = 0
+while True:
+    print('%' * 50, 'IMPRIMIR O MAIOR NÚMERO E QUANTAS VEZES ELE FOI CONTADO. '
+                    'USUÁRIO INFORMA QUANTIDADE DE NÚMEROS ', '%' * 50)
+    qtd = float(input('Insira quantos números serão lidos:'))
+    while qtd != int(qtd) or qtd <= 0:
+        print('Número inválido!')
+        qtd = float(input('Insira quantos números serão lidos:'))
+    for i in range(1, int(qtd) + 1):
+        num = float(input(f'Insira o {i}º número:'))
+        if num > maior:
+            maior = num
+        if num == maior:
+            cont = cont + 1
+    print(f'Maior = {maior}')
+    print(f'O maior número apareceu {cont}.')
