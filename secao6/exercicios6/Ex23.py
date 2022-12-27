@@ -26,7 +26,7 @@ while True:
     for i in range(1, int(num) +1):
         if num % i == 0:
             print(i, end=' ')
-"""
+# 4
 while True:
     print('%' * 50,'CALCULA OS DIVISORES DE UM NÚMERO POSITIVO:','%' * 50)
     num = float(input('Insira um número inteiro e positivo:'))
@@ -38,32 +38,17 @@ while True:
             print(i, end=' ')
     print('\n')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
+while True:
+    print('%' * 50, 'CALCULA OS DIVISORES DE UM NÚMERO POSITIVO:', '%' * 50)
+    # Entrada
+    num = float(input('Insira um número positivo inteiro:'))
+    while num != int(num) and num <= 0:
+        print('Valor inválido!')
+        num = float(input('Insira um número positivo inteiro:'))
+    # Processamento
+    num = int(num)
+    for i in range(1, num + 1):
+        if num % i == 0:
+            print(i, end=' ')
+    print('\n')

@@ -40,7 +40,7 @@ while True:
             multiplicacao *= i
     print(f'A soma dos números pares no intervalo {num1} e {num2} é {soma}.')
     print(f'A multiplicação dos números ímpares no íntervalo {num1} e {num2} é {multiplicacao} ')
-"""
+
 soma = 0
 multiplica = 1
 while True:
@@ -63,4 +63,30 @@ while True:
     print(f'{soma} é o valor da soma dos números pares do intervalo entre {num1} e {num2}.\n '
           f'{multiplica} é referente a multiplicação dos ímpares do intervalo {num1} e {num2}.')
     break # break o while True: mas elimina o acumulo de resultado de cálculos passados.(sem função clear.lista)
+"""
+# VAR
+soma = 0
+multiplicacao = 1
+
+print('%' * 50, 'RECEBE 2 NÚMEROS E GERA UM INTERVALO NUMÉRICO ENTRE ELES;'
+                ' SOMA OS PARES E MULTIPLICA OS ÍMPARES:', '%' * 50)
+# Entradas
+num1 = float(input('Insira o 1º número inteiro:'))
+while num1 != int(num1):
+    print('1º Número inválido!')
+    num1 = float(input('Insira o 1º número inteiro:'))
+num2 = float(input('Insira o 2º número inteiro:'))
+while num2 != int(num2):
+    print('2º Número inválido!')
+    num2 = float(input('Insira o 2º número inteiro:'))
+# PROCESSAMENTO
+for i in range(int(num1), int(num2 + 1)):
+    if i % 2 == 0:
+        soma += i
+    else:
+        multiplicacao *= i
+
+# SAÍDA
+print(f'Soma dos pares do intervalo:{soma}\nMultiplicação '
+      f'dos ímpares do intervalo:{multiplicacao}')
 

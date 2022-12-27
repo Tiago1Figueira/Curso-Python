@@ -40,7 +40,7 @@ while True:
         lista.append(i)
     print(sum(lista))
     lista.clear()
-"""
+
 soma = 0
 while True:
     print('%' * 50, 'SOMA TODOS OS NÚMEROS INTEIROS POSITIVOS DE 0 ATÉ O NÚMERO INSERIDO PELO USUÁRIO:','%' * 50)
@@ -53,16 +53,19 @@ while True:
     print(f'O valor da soma dos números de 0 até {num} é igual a {soma}!')
     break #colocado pra evitar a soma constante de vários lançamentos!Contudo, quebra o while true:!
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
+soma = 0
+while True:
+    print('%' * 50, 'SOMA TODOS OS NÚMEROS INTEIROS POSITIVOS '
+                    'DE 0 ATÉ O NÚMERO INSERIDO PELO USUÁRIO:', '%' * 50)
+    num = float(input('Insira um número inteiro e positivo:'))
+    while num != int(num) or num < 0:
+        print('Número inválido!')
+        num = float(input('Insira um número inteiro e positivo:'))
+    for i in range(0, int(num) + 1):
+        soma = soma + i
+        print(i, end=' ')
+    print('/n')
+    print(f'A soma dos números acime é {soma}!')
+    break  # colocado pra evitar a soma constante de vários lançamentos!
+           # Contudo, quebra o while true:!
