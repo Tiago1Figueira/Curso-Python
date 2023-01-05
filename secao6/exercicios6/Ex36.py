@@ -29,7 +29,6 @@ for i in range(n1, n2 + 1):
 print(f'A diferença entre a soma dos quadrados dos {n2} primeiros números e o quadrado da soma é '
       f'{soma_2} - {soma} = {diferenca}!!')
 
-"""
 #3
 soma = 0
 soma_quadrado = 0
@@ -42,6 +41,19 @@ for i in range(n1, n2):
     quadrado_soma = (soma)**2
 diferenca = quadrado_soma - soma_quadrado
 print(f'A diferença é {diferenca}')
+"""
+soma = 0
+somaQuadrados = 0
+quadradoSoma = 0
+numero1 = 1
+numero2 = 101
+print('%' * 50, 'Calcula a diferença entre o quadrado da soma e a soma dos quadrados '
+                f'de 100 números', '%' * 50)
+for i in range(numero1, numero2):
+    somaQuadrados += (i ** 2)
+    soma += i
+    quadradoSoma = (soma) ** 2
 
-
-
+resultado = quadradoSoma - somaQuadrados
+print(f'O resultado da diferença entre o quadrado da soma e a soma dos quadrados '
+      f'de 100 números é {resultado}!')

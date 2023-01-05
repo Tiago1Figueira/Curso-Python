@@ -42,8 +42,6 @@ while True:
     print(f'Maior {max(lista)} Menor {min(lista)}!')
     lista.clear()
 
-
-"""
 #4
 lista = [ ]
 while True:
@@ -55,12 +53,21 @@ while True:
         lista.append(num)
 print(f'Maior {max(lista)} Menor {min(lista)}!')
 
+"""
+maior = - 9999
+menor = 9999
+while True:
+    num = input('Insira um número:')
+    try:
+        num = int(num)
+        if num < 0:
+            break
+        else:
+            if num > maior:
+                maior = num
+            if num < menor:
+                menor = num
+    except:
+        print('Valor não é inteiro ou não é caracter válido! Tente novamente!')
 
-
-
-
-
-
-
-
-
+print(f'Maior número = {maior} e Menor número = {menor}!')

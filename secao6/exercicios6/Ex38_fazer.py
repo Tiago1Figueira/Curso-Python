@@ -12,7 +12,7 @@ for a in range(1,3):                    #1_000_000_000
             soma = (a*a) + (b*b)
             if c ** 2 == soma and a + b + c == 3:
                 print(a,b,c)
-#não entendi o propósito final desse esquema de loop for sobre loop for.
+
 
 
 
