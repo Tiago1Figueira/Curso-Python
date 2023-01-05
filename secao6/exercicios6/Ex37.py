@@ -16,7 +16,7 @@ for i in range(1000,10_000):
     d = int(b) + int(c)
     if d ** 2 == i:
         print(i)
-"""
+
 #3
 for i in range(1000,10_000):
     w = str(i)
@@ -26,4 +26,11 @@ for i in range(1000,10_000):
     if z ** 2 == i:
         print(i)
 
-
+"""
+for i in range(1000, 10_000):
+    w = str(i)
+    x = w[0:2]
+    y = w[2:]
+    z = int(x) + int(y)
+    if z ** 2 == i:
+        print(i)

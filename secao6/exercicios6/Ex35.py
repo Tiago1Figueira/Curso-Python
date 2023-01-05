@@ -22,12 +22,12 @@ for i in range(num1, num2):
     if i % 2 != 0:
         soma += i
 print(f'A soma dos números ímpares no intervalo dos números {num1} e {num2} é igual a {soma}!')
-"""
-#3
+
+# 3
 # devido ao while True inicial a variável soma fica somando os ímpares de todos os valores dados.
 soma = 0
 while True:
-    print('='*80)
+    print('=' * 80)
     num1 = float(input('Informe o primeiro número do intervalo:'))
     while num1 < 0 or num1 != int(num1):
         print('Atenção: digite número inteiro e positivo!')
@@ -46,24 +46,25 @@ while True:
             if i % 2 != 0:
                 soma += i
     print(f'A soma dos números ímpares do intervalo dado é {soma}!')
+"""
+soma = 0
+while True:
+    print('%' * 50, 'RECEBE 2 NÚMEROS E CALCULA A SOMA DE '
+                    'TODOS OS ÍMPARES DO INTERVALO:', '%' * 50)
+    valor1 = float(input('Insira o valor inicial do intervalo:'))
+    valor2 = float(input('Insira o valor final do intervalo:'))
+    if (valor1 > valor2):
+        print('Valor inválido! Valor Inicial deve ser maior que valor final!')
+    elif valor1 != int(valor1):
+        print('Valor inválido! Valor Inicial deve ser inteiro!')
+    elif valor2 != int(valor2):
+        print('Valor inválido! Valor final deve ser inteiro!')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    else:
+        valor1 = int(valor1)
+        valor2 = int(valor2)
+        for i in range(valor1, valor2):
+            if i % 2 != 0:
+                soma += i
+        print(f'A soma dos números ímpares do intervalo é {soma}!')
 

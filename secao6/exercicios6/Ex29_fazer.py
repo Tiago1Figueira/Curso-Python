@@ -11,6 +11,11 @@ print('O resultado desta série é ', s)
 
 """
 
+while True:
+    n = float(input('Insira um número:'))
+    if n <= 0 or n != int(n):
+        print('Valor inválido!Tente novamente!')
+   # else:
 
 
 

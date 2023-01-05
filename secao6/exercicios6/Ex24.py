@@ -30,13 +30,13 @@ while True:
         if num % i == 0:
             soma.append(i)
     print(f'A soma dos divisores do número {num} é {sum(soma)}!')
-"""
+
 soma = 0
 while True:
     print('%' * 50, 'RECEBE UM NÚMERO E CALCULA A SOMA DE TODOS OS SEUS '
                     'DIVISORES EXCLUINDO ELE PRÓPRIO:', '%' * 50)
     num = float(input('Insira um número positivo e inteiro:'))
-    while num <=0 or num != int(num):
+    while num <= 0 or num != int(num):
         print('Número inválido!')
         num = float(input('Insira um número positivo e inteiro:'))
     for i in range(1, int(num)):
@@ -44,23 +44,21 @@ while True:
             soma += i
     print(f'A soma dos números divisores de {num} é {soma}.')
     # break = quebra o while true, mas tb não deixa que a soma seja um agregado das somas prévias.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
+soma = 0
+print('%' * 50, 'RECEBE UM NÚMERO E CALCULA A SOMA DE TODOS OS SEUS '
+                'DIVISORES EXCLUINDO ELE PRÓPRIO:', '%' * 50)
+# Entrada
+num = float(input('Insira um número positivo:'))
+while num <= 0 or num != int(num):
+    print('Valor inválido!')
+    num = float(input('Insira um número positivo:'))
+# Processamento
+num = int(num)
+for i in range(1, num):
+    if num % i == 0:
+        soma += i
+# Saída
+        print(i, end=' ')
+print(f'\n{soma}')
+print('\n')

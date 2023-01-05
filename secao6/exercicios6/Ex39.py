@@ -22,7 +22,7 @@ while altura <= 0 or base <= 0:
 area_triangulo = (base * altura) / 2
 print(f'A área do triângulo de base {base} e de altura {altura} é {area_triangulo}!!')
 
-"""
+
 #3
 while True:
     print('='*80)
@@ -36,3 +36,13 @@ while True:
         altura = float(input('Informe a base do triângulo:'))
     area_triangulo = base * altura / 2
     print(f'A área do triângulo é {area_triangulo:.2f}')
+"""
+while True:
+    print('#' * 100)
+    base = float(input('Insira o valor da base do triângulo:'))
+    altura = float(input('Insira o valor da altura do triângulo:'))
+    if base <= 0 or altura <= 0:
+        print('Valores nulos ou negativos! Tente novamente!')
+    else:
+        area = (base * altura) / 2
+        print(f'Área do triângulo = {area:.2f}')

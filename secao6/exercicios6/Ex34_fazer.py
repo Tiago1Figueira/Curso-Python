@@ -11,11 +11,3 @@ while True:
         break
     n += 1
 """
-numero = 1
-while True:
-    check = 0
-    for i in range(1,21):
-        check += numero % i
-    print(check)
-
-
