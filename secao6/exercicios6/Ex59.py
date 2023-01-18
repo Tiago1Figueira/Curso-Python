@@ -64,8 +64,9 @@ lista = []
 hab = int(input('Informe o número de habitantes:'))
 for i in range(1, hab + 1):
     print('CÓDIGO DO HABITANTE:\n1- RESIDENCIAL\n2- COMERCIAL\n3- INDUSTRIAL')
-    cod = int(input(f'Informe o código do {i}° habitante: n°'))
+    cod = input(f'Informe o código do {i}° habitante: n°')
     try:
+        cod = int(cod)
         if cod >= 1 and cod <= 3:
             if cod == 1:
                 consumo1 = float(input(f'Informe o seu consumo de energia do {i}° habitante:'))
