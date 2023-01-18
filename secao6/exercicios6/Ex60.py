@@ -55,36 +55,23 @@ print(f'A média dos números foi {media:.2f}!')
 print(f'O maior número digitado foi {max(lista)} e o menor foi {min(lista)}!')
 print(f'A média dos números pares digitados é {par/ cont_par} ')
 """
-#3
-lista = [ ]
-pares = [ ]
+# 3
+lista = []
+pares = []
+print('#' * 50, 'SOMA, QUANTIDADE, MÉDIA, MAIOR E MENOR NÚMERO!', '#' * 50)
 while True:
-    num = float(input('Informe um número:'))
-    if num == 0:
-        print('Você saiu!')
-        break
-    elif num % 2 == 0:
-        pares.append(num)
-    lista.append(num)
+    num = input('Informe um número(Zero finaliza o programa!)Nº:')
+    try:
+        num = float(num)
+        if num == 0:
+            print('Você saiu!')
+            break
+        elif num % 2 == 0:
+            pares.append(num)
+        lista.append(num)
+    except:
+        print('Caracter inválido ou nulo! Tente novamente!')
 
 print(f'1-Soma dos números {sum(lista)}!\n2-Total número digitados {len(lista)}!\n'
-f'3-Média dos números {sum(lista)/ len(lista)}!\n4-Maior número {max(lista)}!\n5-Menor Número {min(lista)}!\n'
-f'6-Média números pares {sum(pares) / len(pares)}!')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      f'3-Média dos números {sum(lista) / len(lista)}!\n4-Maior número {max(lista)}!\n5-Menor Número {min(lista)}!\n'
+      f'6-Média números pares {sum(pares) / len(pares)}!')

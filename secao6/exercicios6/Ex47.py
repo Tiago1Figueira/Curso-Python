@@ -72,40 +72,38 @@ while True:
         'adição -        opção 1\nsubtração -     opção 2\nmultiplicação - opção 3\ndivisão -       opção 4\nsaída -         opção 5')
     opc = int(input('Informe a opção: N°'))
 """
-#3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+while True:
+    print('@' * 50, 'Calculadora com 5 opção', '@' * 50)
+    print('Eu quero:\n1-Adição\n2-Subtração\n3-Multiplicação\n4-Divisão\n5-Sair')
+    opcao = input('Insira a opção desejada:')
+    try:
+        opcao = int(opcao)
+        if opcao >= 1 and opcao <= 5:
+            if opcao == 1:
+                num1 = float(input('Insira o 1º número:'))
+                num2 = float(input('Insira o 2º número:'))
+                adicao = num1 + num2
+                print(f'{num1} + {num2} = {adicao}')
+            elif opcao == 2:
+                num1 = float(input('Insira o 1º número:'))
+                num2 = float(input('Insira o 2º número:'))
+                subtracao = num1 - num2
+                print(f'{num1} - {num2} = {subtracao}')
+            elif opcao == 3:
+                num1 = float(input('Insira o 1º número:'))
+                num2 = float(input('Insira o 2º número:'))
+                multiplicacao = num1 * num2
+                print(f'{num1} * {num2} = {multiplicacao}')
+            elif opcao == 4:
+                num1 = float(input('Insira o 1º número:'))
+                num2 = float(input('Insira o 2º número:'))
+                divisao = num1 / num2
+                print(f'{num1} / {num2} = {divisao}')
+            elif opcao == 5:
+                print('Você saiu!')
+                break
+        else:
+            print('Número fora do limite pedido! Tente novamente!')
+    except:
+        print('Valor ou caracter inválido! Tente novamente!')
 

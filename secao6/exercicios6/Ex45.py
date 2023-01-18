@@ -40,7 +40,7 @@ while True:
     print('=' * 55, 'Converta km/h para m/s e vice-versa', '=' * 65)
     print('1- KM/H PARA M/S:\n2- M/S PARA KM/H:\n3- FINALIZAR PROGRAMA:')
     opt = int(input('Informe o número escolhido: 1, 2 ou 3 - N°'))
-"""
+
 #3
 while True:
     print('='*50, 'CONVERSÃO M/S PARA KM/H E VICE-VERSA!','='*50)
@@ -64,20 +64,32 @@ while True:
         print('Você saiu!')
         break
 
+"""
+while True:
+    print('#' * 50,'CONVERTA AS GRANDEZAS: KM - MS OU MS - KM', '#' * 50)
+    print('QUERO EM:\n1- QUILÔMETROS\n2- METROS/SEGUNDO\n3- SAIR')
+    opcao = input('Informe a opção:Nº')
 
+    # ENTRADAS
+    try:
+        opcao = int(opcao)
+        if opcao >= 1 and opcao <= 3:
+            if opcao == 1:
+                ms = float(input('Insira valor em metros/segundo '
+                                 'para conversão em Km:'))
+                quilometros = ms * 3.6
+                print(f'Quilômetros= {quilometros:.3f}')
 
+            elif opcao == 2:
+                km = float(input('Insira valor em quilômetros '
+                                 'para conversão em metros/segundo:'))
+                metrosSegundo = km / 3.6
+                print(f'Metros por segundo= {metrosSegundo:.3f}')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            elif opcao == 3:
+                print('Você saiu!')
+                break
+        else:
+            print('Opção Inválida! Tente novamente!')
+    except:
+        print('Caracter Inválido! Tente novamente!')

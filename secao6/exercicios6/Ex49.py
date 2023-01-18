@@ -34,7 +34,7 @@ while joao < carlos:
     cont_meses += 1
 print(f'O montante do investimento de João será maior que o de Carlos em {cont_meses} meses!')
 
-"""
+
 #3
 cont = 0
 icarlos = 2/100
@@ -49,22 +49,15 @@ while True:
         joao += (joao * ijoao)
         cont += 1
     print(f'O número de meses que João precisa para igualar ou ultrapassar o salário de Carlos é {cont}!')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
+cont = 0
+while True:
+    # Entradas
+    salarioCarlos = float(input('Insira salário do Carlos:'))
+    salarioJoao = (salarioCarlos / 3)
+    # Processamento
+    while salarioJoao <= salarioCarlos:
+        salarioJoao += salarioJoao * 0.05
+        salarioCarlos += salarioCarlos * 0.02
+        cont += 1
+    print(f'João terá mais dinheiro que Carlos em {cont} meses!')

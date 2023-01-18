@@ -15,22 +15,12 @@ for i in range(1, 100, 2):
     cont += 1
     soma += i / cont
 print(f'O valor de S é igual a {soma:.2f}!')
-
-#2
+"""
+# 2
 cont = 0
 soma = 0
-for i in range(1,100,2):
+for i in range(1, 100, 2):
     cont += 1
     soma += i / cont
 
-    print(f'O valor da soma é {soma:.2f}, {cont}!')
-"""
-
-soma = 0
-contador = 0
-for i in range(1, 51):
-    contador += 1
-for i in range(1, 100, 2):
-    soma += i
-s = soma / contador
-print(f'S = {s}')
+print(f'O valor da soma é {soma:.2f}, {cont}!')

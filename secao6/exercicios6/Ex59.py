@@ -55,8 +55,8 @@ for i in range(1, populacao + 1):
 print(f'Valores de consumo:\nMaior valor {max(lista)}\nMenor Valor {min(lista)}\nMédia dos Valores {soma_total/populacao}\n')
 print(f'Total de consumo por categoria:\nResidencial {soma1}\nComercial {soma2}\nIndustrial {soma3}\n')
 print('=' * 152)
-
-#3
+"""
+# 3
 soma1 = 0
 soma2 = 0
 soma3 = 0
@@ -65,69 +65,31 @@ hab = int(input('Informe o número de habitantes:'))
 for i in range(1, hab + 1):
     print('CÓDIGO DO HABITANTE:\n1- RESIDENCIAL\n2- COMERCIAL\n3- INDUSTRIAL')
     cod = int(input(f'Informe o código do {i}° habitante: n°'))
-    while cod < 1 or cod > 3:
-        print('CÓDIGO DO HABITANTE:\n1- RESIDENCIAL\n2- COMERCIAL\n3- INDUSTRIAL')
-        cod = int(input(f'Informe o código do {i}° habitante: n°'))
-    if cod ==1:
-        consumo1 = float(input(f'Informe o seu consumo de energia do {i}° habitante:'))
-        print('=' * 70)
-        soma1 += consumo1
-        lista.append(consumo1)
-    if cod ==2:
-        consumo2 = float(input(f'Informe o seu consumo de energia do {i}° habitante:'))
-        print('=' * 70)
-        soma2 += consumo2
-        lista.append(consumo2)
-    if cod ==3:
-        consumo3 = float(input(f'Informe o seu consumo de energia do {i}° habitante:'))
-        print('=' * 152)
-        soma3 += consumo3
-        lista.append(consumo3)
+    try:
+        if cod >= 1 and cod <= 3:
+            if cod == 1:
+                consumo1 = float(input(f'Informe o seu consumo de energia do {i}° habitante:'))
+                print('=' * 70)
+                soma1 += consumo1
+                lista.append(consumo1)
+            elif cod == 2:
+                consumo2 = float(input(f'Informe o seu consumo de energia do {i}° habitante:'))
+                print('=' * 70)
+                soma2 += consumo2
+                lista.append(consumo2)
+            elif cod == 3:
+                consumo3 = float(input(f'Informe o seu consumo de energia do {i}° habitante:'))
+                print('=' * 152)
+                soma3 += consumo3
+                lista.append(consumo3)
+        else:
+            print('Valor nulo ou fora do limite! Tente novamente!')
+    except:
+        print('Caracter inválido ou nulo!Tente novamente!')
 print('=' * 55, 'RESULTADOS GERAIS DO CONSUMO', '=' * 55)
 print(f'Seguem os dados dos valores de consumo:\n1- Maior Valor:{max(lista)}\n2- Menor Valor:{min(lista)}\n'
-          f'3- Média:{soma1 + soma2 + soma3/ hab}')
+      f'3- Média:{soma1 + soma2 + soma3 / hab}')
 print('=' * 55, 'RESULTADOS GERAIS DO CONSUMO', '=' * 55)
 print(f'Classificação do consumo por código:\n1- Residêncial-valor:{soma1}\n2- Comercial-valor:{soma2}'
-          f'\n3- Industrial-valor:{soma3}')
-"""
-#4
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      f'\n3- Industrial-valor:{soma3}')
 
