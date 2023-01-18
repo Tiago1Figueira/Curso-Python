@@ -36,61 +36,18 @@ while ano < 2021:
 print(f'{sal:.2f}')
 print(ano)
 
+
+a = 1997
+taxa1997 = 0.030
+sal1995 = 2000
+sal1996 = sal1995 + (sal1995 * 0.015)
+sal1997 = sal1996 + (sal1996 * 0.030)
+
+while a <= 2022:
+    taxa1997 *= 2
+    sal2022 = sal1997 + (sal1997 * taxa1997)
+
+
+    print(f'O valor do salário atual é {sal2022}')
 """
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

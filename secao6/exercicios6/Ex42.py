@@ -30,7 +30,7 @@ while True:
     print(f'Números{lista}:quadrado:{quadrado}, cubo:{cubo}, raiz_quadrada:{raiz_quadrada}')
     print('=' *165)
 
-"""
+
 #3
 while True:
     print('='*80)
@@ -44,24 +44,20 @@ while True:
         raiz_quadrada = num ** 0.5
     print(f'Quadrado {quadrado:.2f}, Cubo {cubo:.2f}, Raiz Quadrada {raiz_quadrada:.2f}!')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
+while True:
+    print('#' * 50, 'MOSTRA O QUADRADO, O CUBO E A RAIZ QUADRADA DE UM NÚMERO', '#' * 50)
+    numero = input('Insira um número maior que 0:')
+    try:
+        numero = int(numero)
+        if numero > 0:
+            quadrado = numero * numero
+            cubo = numero ** 3
+            raizQuadrada = numero ** 0.5
+            print(f'Quadrado= {quadrado}, '
+                  f'Cubo= {cubo}, Raiz Quadrada= {raizQuadrada:.2f}')
+        else:
+            print('Número negativo ou nulo!Você saiu!')
+            break
+    except:
+        print('Caracter inválido!')

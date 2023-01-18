@@ -21,7 +21,6 @@ while ze < chico:
     ano += 1
 print(f'Zé será maior que Chico depois de {ano} anos!')
 
-"""
 #3
 cont = 0
 chico = 150
@@ -31,22 +30,14 @@ while ze < chico:
     ze += 3
     cont += 1
 print(f'Levará {cont} anos pra Zé ser maior que Chico!')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
+cont = 0
+taxaChico = 2
+taxaZe = 3
+chico = 150
+ze = 110
+while ze < chico:
+    chico = chico + taxaChico
+    ze = ze + taxaZe
+    cont += 1
+print(f'Zé será maior que Chico em {cont} anos.')

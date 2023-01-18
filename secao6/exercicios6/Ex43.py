@@ -31,7 +31,7 @@ while idade > 0:
     media = soma / cont
 print(f'A idade média desse grupo é {media:.2f}!')
 
-"""
+
 #3
 idades = [ ]
 while True:
@@ -45,23 +45,24 @@ while True:
     else:
         idades.append(num)
 print(f'A idade média desse grupo é {sum(idades)/ len(idades)}!')
+"""
+somaIdade = 0
+cont = 0
+mediaIdades = 0
+print('#' * 50, 'SOMA IDADES E MOSTRA A MÉDIA DELAS', '#' * 50)
+while True:
+    idade = input('Insira a sua idade:')
+    cont += 1
+    try:
+        idade = int(idade)
+        if idade > 0:
+            somaIdade += idade
+            mediaIdades = somaIdade / cont
+        else:
+            print('Idade nula ou negativa!Você saiu!\n')
+            break
+    except:
+        print('Caracter inválido! Tente novamente!')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(f'Idades Somadas = {somaIdade}, '
+    f'Média idades= {mediaIdades}')
