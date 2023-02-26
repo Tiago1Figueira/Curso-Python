@@ -10,7 +10,7 @@ for i in vetor1:
     quadrado = i **2
     vetor_quadrado.append(quadrado)
 print(vetor_quadrado)
-"""
+
 #2
 vetor = [ ]
 vetor_quadrado = [ ]
@@ -25,21 +25,17 @@ while True:
     print(f'Números digitados {vetor}!\nNúmeros ao quadrado {vetor_quadrado}!')
     vetor.clear()
     vetor_quadrado.clear()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
+vetor = []
+vetorQuadrado = []
+while True:
+    for elementos in range(1, 11):
+        numero = float(input(f'Informe o {elementos}° número:'))
+        vetor.append(numero)
+    for elementos in vetor:
+        quadrado = elementos ** 2
+        vetorQuadrado.append(quadrado)
+    print(f'Elementos digitados:{vetor}\n'
+          f'Quadrado dos Elementos:{vetorQuadrado}')
+    vetor.clear()
+    vetorQuadrado.clear()

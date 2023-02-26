@@ -11,7 +11,7 @@ for i in range(1,11):
 print(pares)
 print(f'Neste grupo de números há {len(pares)} valores pares.')
 
-"""
+
 #2
 pares = [ ]
 while True:
@@ -26,4 +26,18 @@ while True:
     print(f'Quantia de números pares: {len(pares)}\nNúmeros pares: {pares}')
     pares.clear()
 
+"""
+pares = []
+while True:
+    print('#' * 50, 'RECEBE 10 VALORES E MOSTRA SOMENTE OS PARES', '#' * 50)
+    for i in range(1, 11):
+        numero = input(f'Informe o {i}° número:')
+        try:
+            numero = float(numero)
+            if numero % 2 == 0:
+                pares.append(numero)
 
+        except:
+            print('Caracter inválido!Tente novamente!')
+    print(f'Números pares digitados:{pares}')
+    pares.clear()

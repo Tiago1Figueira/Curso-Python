@@ -7,7 +7,7 @@ for i in range(1,11):
 print(vetor)
 print(max(vetor))
 print(vetor.index(max(vetor)))
-"""
+
 #2
 vetor = [ ]
 while True:
@@ -18,3 +18,4 @@ while True:
     print(f'Números digitados: {vetor}\nMaior elemento: {max(vetor)}\nPosição Maior elemento: {vetor.index(max(vetor))}')
     vetor.clear()
 
+"""
