@@ -15,7 +15,7 @@ print(pares[::-1])
 
 pares.reverse()
 print(pares)
-"""
+
 #2
 pares = [ ]
 for i in range(1,7):
@@ -26,28 +26,19 @@ for i in range(1,7):
     pares.append(num)
 pares.sort()
 print(pares[::-1])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
+vetor = []
+while True:
+    print('=' * 50, 'IMPRIME OS 6 NÚMEROS PARES RECEBIDOS NA ORDEM INVERSA!', '=' * 80)
+    for i in range(1, 7):
+        num = input(f'Insira o {i}º primeiro número inteiro:')
+        try:
+            num = int(num)
+            if num % 2 == 0:
+                vetor.append(num)
+            else:
+                print('Deve ser número par!Tente novamente!')
+        except:
+            print('Caracter inválido! Tente novamente!')
+    print(f'{vetor[::-1]}')
+    vetor.clear()

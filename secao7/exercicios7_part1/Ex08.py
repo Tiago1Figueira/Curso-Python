@@ -10,7 +10,7 @@ print(lista[::-1])
 
 lista.reverse()
 print(lista)
-"""
+
 #2
 #ex8
 vetor = [ ]
@@ -26,4 +26,16 @@ vetor.reverse()  #1 aqui o print não é usado, mas somente depois disso na linh
 print(vetor)
 vetor.clear()
 
+"""
+vetor = []
+while True:
+    print('=' * 50, 'IMPRIME OS 6 NÚMEROS RECEBIDOS NA ORDEM INVERSA!', '=' * 80)
+    for i in range(1, 7):
+        num = float(input(f'Insira o {i}º número:'))
+        while num != int(num):
+            print('Número inválido! Digite números inteiros!')
+            num = float(input(f'Insira o {i}º número:'))
+        vetor.append(num)
+    print(vetor[::-1])
+    vetor.clear()
 
